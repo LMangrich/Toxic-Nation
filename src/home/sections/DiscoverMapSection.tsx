@@ -19,22 +19,18 @@ export const DiscoverMapSection = () => {
           </h2> */}
           <div className="relative max-w-[1200px] max-h-[870px] mx-auto">
               {/* Borda superior */}
-              <div className="absolute inset-0 border-t-2 border-highlight-toxic-green/40 scale-[94.5%]" />
-              <div className="absolute inset-0 border-t-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
+              <div className="absolute inset-0 border-t-2 border-r-2 border-highlight-toxic-green/40 scale-[94.5%]
+               before:content-[''] before:absolute before:top-[1px] before:left-0 before:w-[2px] before:h-[88.9%] before:bg-highlight-toxic-green/40
+               after:content-[''] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-[83.75%] after:bg-highlight-toxic-green/40" 
+              />
+              <div className="absolute inset-0 border-t-2 border-r-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]
+               before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-[89.5%] before:bg-highlight-toxic-green/40
+               after:content-[''] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-[84%] after:bg-highlight-toxic-green/40" 
+              />
 
-              {/* Borda inferior*/}
-              <div className="absolute bottom-[2.8%] left-[15.5%] right-[0.55%] h-0 border-t-2 border-highlight-toxic-green/40 scale-[94.5%]" />
-              <div className="absolute bottom-[3.2%] left-[15.2%] right-[0.5%] h-0 border-t-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
-              <div className="absolute bottom-[2.7%] left-[17.65%] h-[6px] w-0 border-l-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
-
-              {/* Borda lateral esquerda */}
-              <div className="absolute left-[2.7%] top-[0.5%] bottom-[10.9%] w-0 border-l-2 border-highlight-toxic-green/40 scale-[94.5%]" />
-              <div className="absolute left-[3%] top-[0.3%] bottom-[10.4%] w-0 border-l-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
-              <div className="absolute bottom-[13.2%] left-[2.7%] h-0 w-[5px] border-b-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
-
-              {/* Borda lateral direita */}
-              <div className="absolute right-0 top-[0.2%] inset-0 border-r-2 border-highlight-toxic-green/40 scale-[94.5%]" />
-              <div className="absolute right-0 top-[0.2%] bottom-[0.2%] left-[2%] inset-0 border-r-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[94%]" />
+              
+              <div className="absolute bottom-[2.7%] left-[17.9%] h-[7px] w-0 border-l-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
+              <div className="absolute bottom-[12.8%] left-[2.75%] h-2 w-[6px] border-b-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
 
             <img src={map} 
                 alt="Map Placeholder" 
