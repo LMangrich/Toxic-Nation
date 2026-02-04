@@ -1,39 +1,43 @@
-import placeholderAvatar from '../../assets/image 58.png';
+import placeHolderAvatar from '../../assets/pixel_art_avatar.webp';
+import { Palette, BookOpen, Monitor, Music } from 'lucide-react';
 
 const teamMembers = [
   {
     role: 'ART DIRECTOR',
+    icon: Palette,
     name: 'Mateus Heinz',
     description: 'Leading the visual development with 10+ years in game art direction and concept design.',
-    image: '/placeholder-avatar.png', // Replace with actual image path
+    image: placeHolderAvatar,
   },
   {
     role: 'NARRATIVE',
+    icon: BookOpen,
     name: 'Livia Silva',
     description: 'Crafting the dystopian lore and interconnected story threads of the Toxic Nation universe.',
-    image: '/placeholder-avatar.png',
+    image: placeHolderAvatar
   },
   {
     role: 'TECH ART',
+    icon: Monitor,
     name: 'Helena Licheski',
     description: 'Bridging art and technology to create this unique interactive artbook experience.',
-    image: '/placeholder-avatar.png',
+    image: placeHolderAvatar,
   },
   {
     role: 'SOUND DESIGN',
+    icon: Music,
     name: 'Lucca Kyuzans',
     description: 'Designing atmospheric soundscapes that bring the toxic world to life.',
-    image: '/placeholder-avatar.png',
+    image: placeHolderAvatar,
   },
 ];
 
 export const CreativeTeamSection = () => {
   return (
     <section className="px-16">
-      <div className="max-w-7xl mx-auto">
-        {/* Title */}
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-[64px] font-nemesys text-white mb-4 tracking-wider">
+          <h2 className="text-[64px] font-nemesys text-white mb-6">
             CREATIVE TEAM
           </h2>
           <p className="text-18 font-semibold font-cabin text-white">
@@ -41,48 +45,43 @@ export const CreativeTeamSection = () => {
           </p>
         </div>
 
-        {/* Team Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-[92px]">
+        <div className="mx-auto max-w-sm md:max-w-lg lg:max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[28px] mb-[92px]">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="relative"
+              className="relative min-w-[240px]"
             >
-              {/* Card Container */}
-              <div 
-                className="relative bg-gradient-to-b from-[#4A6B3E] to-[#2D4229] border-2 border-toxic-green p-6"
-                style={{
-                  boxShadow: '4px 4px 4px 0px rgba(145, 255, 34, 0.25), -2px -2px 4px 0px rgba(145, 255, 34, 0.25)',
-                }}
-              >
-                {/* Corner squares outside border */}
+              <div className="h-[313px] relative bg-dark-toxic-green/40 border-2 border-toxic-green py-[19px] px-4 shadow-[4px_4px_4px_0px_#91FF2240,-2px_-2px_4px_0px_#91FF2240]">
                 <div className="absolute left-0 top-0 -translate-y-2 -translate-x-1.5 h-4 w-4 bg-toxic-green" />
                 <div className="absolute right-0 bottom-0 translate-y-2 translate-x-1.5 h-4 w-4 bg-toxic-green" />
                 
-                {/* Role Tag */}
-                <div className="bg-black/60 border border-toxic-green px-3 py-1 flex items-center gap-2 w-fit mb-4">
-                  <div className="w-3 h-3 rounded-full border-2 border-toxic-green"></div>
-                  <span className="text-12 font-cabin text-toxic-green uppercase tracking-wide">
+                <div className="bg-light-toxic-green/40 border border-toxic-green max-w-[126px] px-2 py-1.5 flex items-center gap-2 w-full">
+                  <member.icon className="w-[13px] h-[13px] text-soft-toxic-green" strokeWidth={3}/>
+                  <span className="text-12 font-cabin text-soft-toxic-green uppercase font-semibold">
                     {member.role}
                   </span>
                 </div>
 
-                {/* Avatar Image */}
-                <div className="mb-4">
-                  <img 
-                    src={placeholderAvatar} 
-                    alt={member.name}
-                    className="w-full h-auto"
-                  />
-                </div>
+                  <div className="relative my-[7px]">
+                      <div className="w-full bg-light-toxic-green/40 h-[131px] border-l border-r border-toxic-green z-0 relative before:content-[''] before:absolute before:h-[1px] before:w-[132px] before:bg-toxic-green after:absolute after:bottom-0 after:h-[1px] after:w-[124px] after:bg-toxic-green">
+                        <div className='bg-light-toxic-green/40 h-[40px] w-[99px] right-0 -top-[40px] border-t border-l border-r border-toxic-green z-99 ml-auto -translate-y-[40px] translate-x-[0.5px]'/>
+                        <div className='bg-light-toxic-green/40 h-[30px] w-[107px] border-b border-l border-r border-toxic-green right-0 -bottom-[30px] z-99 ml-auto translate-y-[91px] translate-x-[0.5px]'/>
+                      </div>
 
-                {/* Name */}
-                <div className="bg-black/60 border border-toxic-green px-3 py-2 mb-4">
-                  <h3 className="text-16 font-cabin text-white">{member.name}</h3>
-                </div>
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="absolute max-w-[158px] grayscale scale-x-[-1] -bottom-[29px] right-[2px] z-10"
+                      style={{
+                        clipPath: 'polygon(0 0, 100% 0, 100% 84%, 65% 84%, 65% 100%, 0 100%)'
+                      }}
+                    /> 
+                  </div>
+                  <h3 className="relative z-20 px-2 text-14 w-full max-w-[117px] border border-toxic-green font-cabin font-semibold text-toxic-green bg-dark-toxic-green/40">
+                    {member.name}
+                  </h3>
 
-                {/* Description */}
-                <p className="text-14 font-cabin text-white leading-relaxed">
+                <p className="relative z-20 text-14 font-cabin text-soft-toxic-green mt-3 h-[76px]">
                   {member.description}
                 </p>
               </div>

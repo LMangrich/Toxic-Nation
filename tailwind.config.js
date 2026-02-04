@@ -8,7 +8,10 @@ export default {
     extend: {
       colors: {
         'toxic-green': '#59C135',
+        'soft-toxic-green': '#D6F264',
         'highlight-toxic-green': '#9CDB4366',
+        'light-toxic-green': '#59C13566',
+        'dark-toxic-green': '#24523B66',
         'toxic-purple': '#793A80',
         'toxic-pink': '#E86AA3',
       },

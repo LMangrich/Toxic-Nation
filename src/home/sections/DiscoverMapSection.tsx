@@ -18,8 +18,6 @@ export const DiscoverMapSection = () => {
             Discover the hidden secrets
           </h2> */}
           <div className="relative max-w-[1200px] max-h-[870px] mx-auto">
-              {/* <div className="absolute inset-0 border-2 border-highlight-toxic-green/40 scale-[94.5%]" />
-              <div className="absolute inset-0 border-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" /> */}
               {/* Borda superior */}
               <div className="absolute inset-0 border-t-2 border-highlight-toxic-green/40 scale-[94.5%]" />
               <div className="absolute inset-0 border-t-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
