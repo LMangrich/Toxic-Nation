@@ -49,39 +49,44 @@ export const CreativeTeamSection = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="relative min-w-[240px]"
+              className="relative min-w-[240px] group transition-transform duration-300 hover:scale-110 z-10 hover:z-20"
             >
-              <div className="h-[313px] relative bg-dark-toxic-green/40 border-2 border-toxic-green py-[19px] px-4 shadow-[4px_4px_4px_0px_#91FF2240,-2px_-2px_4px_0px_#91FF2240]">
-                <div className="absolute left-0 top-0 -translate-y-2 -translate-x-1.5 h-4 w-4 bg-toxic-green" />
-                <div className="absolute right-0 bottom-0 translate-y-2 translate-x-1.5 h-4 w-4 bg-toxic-green" />
+              {/* Main Container: Swaps Shadow and Border on Hover */}
+              <div className="h-[313px] relative bg-dark-toxic-green/40 border-2 border-toxic-green py-[19px] px-4 shadow-[4px_4px_4px_0px_#91FF2240,-2px_-2px_4px_0px_#91FF2240] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B] group-hover:shadow-[4px_4px_4px_0px_#9747FF80,-2px_-2px_4px_0px_#9747FF80]">
+                {/* Corner Squares */}
+                <div className="absolute left-0 top-0 -translate-y-2 -translate-x-1.5 h-4 w-4 bg-toxic-green transition-colors duration-300 group-hover:bg-[#BC4A9B]" />
+                <div className="absolute right-0 bottom-0 translate-y-2 translate-x-1.5 h-4 w-4 bg-toxic-green transition-colors duration-300 group-hover:bg-[#BC4A9B]" />
                 
-                <div className="bg-light-toxic-green/40 border border-toxic-green max-w-[126px] px-2 py-1.5 flex items-center gap-2 w-full">
-                  <member.icon className="w-[13px] h-[13px] text-soft-toxic-green" strokeWidth={3}/>
-                  <span className="text-12 font-cabin text-soft-toxic-green uppercase font-semibold">
+                {/* Role Badge */}
+                <div className="bg-light-toxic-green/40 border border-toxic-green max-w-[126px] px-2 py-1.5 flex items-center gap-2 w-full transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]">
+                  <member.icon className="w-[13px] h-[13px] text-soft-toxic-green transition-colors duration-300 group-hover:text-[#BC4A9B]" strokeWidth={3}/>
+                  <span className="text-12 font-cabin text-soft-toxic-green uppercase font-semibold transition-colors duration-300 group-hover:text-[#BC4A9B]">
                     {member.role}
                   </span>
                 </div>
 
                   <div className="relative my-[7px]">
-                      <div className="w-full bg-light-toxic-green/40 h-[131px] border-l border-r border-toxic-green z-0 relative before:content-[''] before:absolute before:h-[1px] before:w-[132px] before:bg-toxic-green after:absolute after:bottom-0 after:h-[1px] after:w-[124px] after:bg-toxic-green">
-                        <div className='bg-light-toxic-green/40 h-[40px] w-[99px] right-0 -top-[40px] border-t border-l border-r border-toxic-green z-99 ml-auto -translate-y-[40px] translate-x-[0.5px]'/>
-                        <div className='bg-light-toxic-green/40 h-[30px] w-[107px] border-b border-l border-r border-toxic-green right-0 -bottom-[30px] z-99 ml-auto translate-y-[91px] translate-x-[0.5px]'/>
+                      {/* Inner Frame Shapes */}
+                      <div className="w-full bg-light-toxic-green/40 h-[131px] border-l border-r border-toxic-green z-0 relative transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B] before:content-[''] before:absolute before:h-[1px] before:w-[132px] before:bg-toxic-green group-hover:before:bg-[#BC4A9B] after:absolute after:bottom-0 after:h-[1px] after:w-[124px] after:bg-toxic-green group-hover:after:bg-[#BC4A9B]">
+                        <div className='bg-light-toxic-green/40 h-[40px] w-[99px] right-0 -top-[40px] border-t border-l border-r border-toxic-green z-99 ml-auto -translate-y-[40.9px] translate-x-[1px] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]'/>
+                        <div className='bg-light-toxic-green/40 h-[30px] w-[107px] border-b border-l border-r border-toxic-green right-0 -bottom-[30px] z-99 ml-auto translate-y-[90px] translate-x-[1px] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]'/>
                       </div>
 
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="absolute max-w-[158px] grayscale scale-x-[-1] -bottom-[29px] right-[2px] z-10"
+                      className="absolute max-w-[158px] grayscale scale-x-[-1] -bottom-[29px] right-[2px] z-10 transition-all duration-300"
                       style={{
                         clipPath: 'polygon(0 0, 100% 0, 100% 84%, 65% 84%, 65% 100%, 0 100%)'
                       }}
                     /> 
                   </div>
-                  <h3 className="relative z-20 px-2 text-14 w-full max-w-[117px] border border-toxic-green font-cabin font-semibold text-toxic-green bg-dark-toxic-green/40">
+
+                  <h3 className="relative z-20 px-2 text-14 w-full max-w-[117px] border border-toxic-green font-cabin font-semibold text-toxic-green bg-dark-toxic-green/40 transition-all duration-300 group-hover:text-[#BC4A9B] group-hover:border-[#BC4A9B] group-hover:bg-[#40335366]">
                     {member.name}
                   </h3>
 
-                <p className="relative z-20 text-14 font-cabin text-soft-toxic-green mt-3 h-[76px]">
+                <p className="relative z-20 text-14 font-cabin text-soft-toxic-green mt-3 h-[76px] transition-colors duration-300 group-hover:text-[#BC4A9B]">
                   {member.description}
                 </p>
               </div>
@@ -91,16 +96,16 @@ export const CreativeTeamSection = () => {
         
         <div className='border-b border-toxic-green scale-x-[85%]'/>
         <div className='flex flex-row justify-between -translate-y-2'>
-        <div className='flex flex-row gap-1 items-start'>
-            <div className="h-4 w-4 bg-toxic-green" />
-            <div className="h-4 w-4 bg-toxic-green" />
-            <div className="h-4 w-4 bg-toxic-green" />
-        </div>
-        <div className='flex flex-row gap-1 self-end'>
-            <div className="h-4 w-4 bg-toxic-green" />
-            <div className="h-4 w-4 bg-toxic-green" />
-            <div className="h-4 w-4 bg-toxic-green" />
-        </div>
+          <div className='flex flex-row gap-1 items-start'>
+              <div className="h-4 w-4 bg-toxic-green" />
+              <div className="h-4 w-4 bg-toxic-green" />
+              <div className="h-4 w-4 bg-toxic-green" />
+          </div>
+          <div className='flex flex-row gap-1 self-end'>
+              <div className="h-4 w-4 bg-toxic-green" />
+              <div className="h-4 w-4 bg-toxic-green" />
+              <div className="h-4 w-4 bg-toxic-green" />
+          </div>
         </div>
       </div>
     </section>
