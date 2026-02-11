@@ -51,10 +51,10 @@ export const MapIconWrapper = ({
       }}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className={`absolute inset-0 -top-1.5 -left-1
+      <div className={`absolute inset-0 -top-1 -left-1
           border-2 ${t.outerBorder} ${t.outerShadow}
           opacity-0 pointer-events-none
-          p-[37px]
+          p-9
           group-hover:opacity-100
           ${t.hoverBg}
           group-hover:animate-box-bounce

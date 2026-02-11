@@ -79,9 +79,9 @@ export default {
         },
         'box-bounce': {
             '0%': { transform: 'scale(0.9)'},
-            '35%': { transform: 'scale(1.08)'},
-            '70%': { transform: 'scale(1)'},
-            '100%': { transform: 'scale(1.05)'},
+            '35%': { transform: 'scale(1.15)'},
+            '70%': { transform: 'scale(1.05)'},
+            '100%': { transform: 'scale(1.1)'},
           },
         'inner-box-bounce': {
             '0%': { transform: 'scale(1)'},

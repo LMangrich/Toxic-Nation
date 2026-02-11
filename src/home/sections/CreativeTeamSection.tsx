@@ -68,8 +68,8 @@ export const CreativeTeamSection = () => {
                   <div className="relative my-[7px]">
                       {/* Inner Frame Shapes */}
                       <div className="w-full bg-light-toxic-green/40 h-[131px] border-l border-r border-toxic-green z-0 relative transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B] before:content-[''] before:absolute before:h-[1px] before:w-[132px] before:bg-toxic-green group-hover:before:bg-[#BC4A9B] after:absolute after:bottom-0 after:h-[1px] after:w-[124px] after:bg-toxic-green group-hover:after:bg-[#BC4A9B]">
-                        <div className='bg-light-toxic-green/40 h-[40px] w-[99px] right-0 -top-[40px] border-t border-l border-r border-toxic-green z-99 ml-auto -translate-y-[40.9px] translate-x-[1px] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]'/>
-                        <div className='bg-light-toxic-green/40 h-[30px] w-[107px] border-b border-l border-r border-toxic-green right-0 -bottom-[30px] z-99 ml-auto translate-y-[90px] translate-x-[1px] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]'/>
+                        <div className='bg-light-toxic-green/40 h-[40px] w-[99px] right-0 -top-[40px] border-t border-l border-r border-toxic-green z-99 ml-auto -translate-y-[40px] translate-x-[1px] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]'/>
+                        <div className='bg-light-toxic-green/40 h-[30px] w-[107px] border-b border-l border-r border-toxic-green right-0 -bottom-[30px] z-99 ml-auto translate-y-[91px] translate-x-[1px] transition-all duration-300 group-hover:bg-[#40335366] group-hover:border-[#BC4A9B]'/>
                       </div>
 
                     <img 
