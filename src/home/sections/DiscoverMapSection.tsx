@@ -37,13 +37,13 @@ export const DiscoverMapSection = () => {
                after:content-[''] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-[83.75%] after:bg-highlight-toxic-green/40" 
               />
               <div className="absolute inset-0 border-t-2 border-r-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]
-               before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-[89.5%] before:bg-highlight-toxic-green/40
+               before:content-[''] before:absolute before:top-0 before:left-0 before:w-[2px] before:h-[89.4%] before:bg-highlight-toxic-green/40
                after:content-[''] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-[84%] after:bg-highlight-toxic-green/40" 
               />
 
               
-              <div className="absolute bottom-[2.7%] left-[17.9%] h-[7px] w-0 border-l-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
-              <div className="absolute bottom-[12.8%] left-[2.75%] h-2 w-[6px] border-b-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
+              <div className="absolute bottom-[2.7%] left-[17.9%] h-[6px] w-0 border-l-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
+              <div className="absolute bottom-[12.9%] left-[2.75%] h-2 w-[6px] border-b-2 border-highlight-toxic-green/40 scale-x-[93.8%] scale-y-[93.5%]" />
 
             <img src={map} 
                 alt="Map Placeholder" 
