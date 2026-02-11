@@ -10,7 +10,7 @@ Você pode acessar o projeto online através do link:
 
 You can access the project online through the link:
 
-**https://lmangrich.github.io/Toxic-Nation-front/**
+**https://lmangrich.github.io/Toxic-Nation/**
 
 ## 🚀 Como Executar Localmente / How to Run Locally
 
@@ -23,8 +23,8 @@ You can access the project online through the link:
 
 1. Clone o repositório / Clone the repository:
 ```bash
-git clone https://github.com/LMangrich/Toxic-Nation-front.git
-cd Toxic-Nation-front
+git clone https://github.com/LMangrich/Toxic-Nation.git
+cd Toxic-Nation
 ```
 
 2. Instale as dependências / Install dependencies:
