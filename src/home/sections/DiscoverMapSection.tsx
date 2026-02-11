@@ -1,5 +1,6 @@
 import map from "../../assets/freepik__pixel-art-pixel-art-holographic-topographic-map-in__52275 1.webp"
 import { CardMapWavingHandIcon, CardMapImagesIcon, CardMapProfileIcon, CardMapPaperIcon, CardMapChatIcon } from "../../components/Icons/Icons"
+import { MapIconWrapper } from "../components/MapIconWrappet";
 
 const legendItems = [
   { color: 'bg-toxic-green border-toxic-green', label: 'Unexplored', textColor: 'text-[#D6F264]' },
@@ -14,10 +15,22 @@ export const DiscoverMapSection = () => {
   return (
     <section className="px-16 py-9"> 
       <div className="mx-auto text-center">
-          {/* <h2 className="absolute text-[64px] font-nemesys">
-            Discover the hidden secrets
-          </h2> */}
           <div className="relative max-w-[1200px] max-h-[870px] mx-auto">
+              <div className="absolute top-5 left-0 w-full overflow-hidden z-20 pointer-events-none">
+                <div className="animate-scroll-left">
+                  <h2 className="text-[64px] font-nemesys text-white whitespace-nowrap inline-block" style={{ filter: 'drop-shadow(0px 0px 7.72px rgba(89, 193, 53, 0.4))' }}>
+                    Discover the hidden secrets
+                  </h2>
+                </div>
+              </div>
+              <div className="absolute top-5 left-0 w-full overflow-hidden z-20 pointer-events-none">
+                <div className="animate-scroll-left-delayed">
+                  <h2 className="text-[80px] text-white" style={{ filter: 'drop-shadow(0px 0px 7.72px rgba(89, 193, 53, 0.4))' }}>
+                    Discover the hidden secrets
+                  </h2>
+                </div>
+              </div>
+              
               {/* Borda superior */}
               <div className="absolute inset-0 border-t-2 border-r-2 border-highlight-toxic-green/40 scale-[94.5%]
                before:content-[''] before:absolute before:top-[1px] before:left-0 before:w-[2px] before:h-[88.9%] before:bg-highlight-toxic-green/40
@@ -37,21 +50,42 @@ export const DiscoverMapSection = () => {
                 className="max-w-[1200px] max-h-[870px] w-full h-full object-cover"
             />
             
-            {/* Fade gradients */}
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute left-0 top-0 w-7 h-full bg-gradient-to-r from-black to-transparent" />
               <div className="absolute right-0 top-0 w-7 h-full bg-gradient-to-l from-black to-transparent" />
             </div>
 
-            {/* Map Icons */}
-            <CardMapProfileIcon className="absolute top-[18%] left-[15%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapWavingHandIcon className="absolute top-[22%] left-[43%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapWavingHandIcon className="absolute top-[16%] left-[60%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapPaperIcon className="absolute top-[18.5%] left-[72%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapChatIcon className="absolute top-[25%] right-[10%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapWavingHandIcon className="absolute top-[37%] left-[30%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapImagesIcon className="absolute bottom-[35%] left-[32%] hover:scale-110 transition-transform cursor-pointer h-auto" />
-            <CardMapWavingHandIcon className="absolute bottom-[25%] right-[26%] hover:scale-110 transition-transform cursor-pointer h-auto" />
+            <MapIconWrapper label="Character Vault" className="absolute top-[18%] left-[15%]">
+              <CardMapProfileIcon />
+            </MapIconWrapper> 
+              
+            <MapIconWrapper label="Welcome Hall" className="absolute top-[22%] left-[43%]">
+              <CardMapWavingHandIcon className="text-soft-toxic-green" />
+            </MapIconWrapper>
+
+            <MapIconWrapper label="Environment Gallery" variant="secondary" className="absolute top-[22%] left-[61.5%]">
+              <CardMapWavingHandIcon />
+            </MapIconWrapper>
+            
+            <MapIconWrapper label="Lore Chamber" className="absolute top-[18.5%] left-[72%]">
+              <CardMapPaperIcon />
+            </MapIconWrapper>
+
+            <MapIconWrapper label="Fellowship Hall" className="absolute top-[25%] right-[10%]">
+              <CardMapChatIcon />
+            </MapIconWrapper>
+
+            <MapIconWrapper label="Environment Gallery" variant="secondary" className="absolute top-[37%] left-[30%]">
+              <CardMapWavingHandIcon />
+            </MapIconWrapper>
+            
+            <MapIconWrapper label="Environment Gallery" className="absolute bottom-[35%] left-[32%]">
+              <CardMapImagesIcon />
+            </MapIconWrapper>
+
+            <MapIconWrapper label="Environment Gallery" variant="secondary" className="absolute bottom-[25%] right-[26%]">
+              <CardMapWavingHandIcon />
+            </MapIconWrapper>
 
             {/* Legend Box */}
             

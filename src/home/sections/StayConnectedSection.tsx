@@ -6,7 +6,7 @@ export const StayConnectedSection = () => {
   return (
     <section className="py-9 max-w-7xl mx-auto">
         <div className='flex flex-col items-center mx-auto mb-12'>
-          <h2 className="text-[64px] md:text-[64px] font-nemesys text-white mb-5">
+          <h2 className="text-[64px] text-center md:text-[64px] font-nemesys text-white mb-5">
             STAY CONNECTED
           </h2>
 
