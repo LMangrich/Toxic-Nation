@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Toxic Nation - Interactive Artbook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desenvolvimento de um website interativo em formato de artbook para o jogo Toxic Nation. O resultado é uma experiência digital que integra design, storytelling e documentação artística em um único produto.
 
-Currently, two official plugins are available:
+Development of an interactive website in artbook format for the Toxic Nation game. The result is a digital experience that integrates design, storytelling, and artistic documentation into a single product.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Acesso Online / Online Access
 
-## React Compiler
+Você pode acessar o projeto online através do link:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+You can access the project online through the link:
 
-## Expanding the ESLint configuration
+**https://lmangrich.github.io/Toxic-Nation-front/**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Como Executar Localmente / How to Run Locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Pré-requisitos / Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (versão 14 ou superior / version 14 or higher)
+- npm ou yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Passos para Instalação / Installation Steps
+
+1. Clone o repositório / Clone the repository:
+```bash
+git clone https://github.com/LMangrich/Toxic-Nation-front.git
+cd Toxic-Nation-front
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Instale as dependências / Install dependencies:
+```bash
+npm install
 ```
+
+3. Execute o projeto em modo de desenvolvimento / Run the project in development mode:
+```bash
+npm run dev
+```
+
+4. Abra seu navegador e acesse / Open your browser and go to:
+```
+http://localhost:5173
+```
+
+### Scripts Disponíveis / Available Scripts
+
+- `npm run dev` - Inicia o servidor de desenvolvimento / Starts the development server
+- `npm run build` - Cria a versão de produção / Creates the production build
+
+## 🎨 Sobre o Projeto / About the Project
+
+Este website foi desenvolvido seguindo um design criado como trabalho de conclusão de curso de um amigo. Minha contribuição foi exclusivamente a implementação do código.
+
+This website was developed following a design created as a final thesis project by a friend of mine. My contribution was exclusively the code implementation.
+
+## 🛠️ Tecnologias Utilizadas / Technologies Used
+
+- **React** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Vite** - Build tool e dev server
+- **Tailwind CSS** - Framework CSS utilitário
+- **Lucide React** - Biblioteca de ícones
+- **GitHub Pages** - Hospedagem
+
+## 📄 Licença / License
+
+Este projeto é parte de um trabalho acadêmico.
+
+This project is part of an academic work.
